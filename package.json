@@ -1,0 +1,17 @@
+{
+  "name": "asphaltic-science-website",
+  "version": "1.0.0",
+  "description": "Static website for Asphaltic Science - Professional Testing Services",
+  "scripts": {
+    "dev": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "preview": "cd client && npm run preview",
+    "install": "cd client && npm install"
+  },
+  "keywords": ["asphalt", "testing", "construction", "australia", "static", "website"],
+  "author": "Asphaltic Science",
+  "license": "MIT"
+}
+
+
+
