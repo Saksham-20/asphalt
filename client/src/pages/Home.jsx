@@ -105,9 +105,12 @@ const Home = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1920&h=1080&fit=crop" 
-            alt="Highway with cars" 
+            src="https://images.pexels.com/photos/34214043/pexels-photo-34214043.jpeg" 
+            alt="Aerial view of Jönköping highway in autumn" 
             className="w-full h-full object-cover"
+            onError={(e) => {
+              e.target.src = "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80";
+            }}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-dark-900/50 to-dark-900/80"></div>
         </div>
