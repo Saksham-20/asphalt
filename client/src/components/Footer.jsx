@@ -12,12 +12,11 @@ const Footer = () => {
   ];
 
   const services = [
-    'Core Testing',
-    'Compaction Testing',
-    'Field Sampling',
-    'Density Measurement',
-    'Material Testing',
-    'Quality Assurance',
+    'Asphalt Laboratory Testing (AS & Q Methods)',
+    'Core Sampling and Site Testing',
+    'Data Analysis & Advanced Testing Expertise',
+    'Expert Solutions & Asphalt Specification Support',
+    'Own Glassware',
   ];
 
   return (
