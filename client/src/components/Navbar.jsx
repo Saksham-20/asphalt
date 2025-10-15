@@ -34,16 +34,17 @@ const Navbar = ({ isScrolled }) => {
           {/* Logo */}
           <Link 
             to="/" 
-            className="flex items-center space-x-3"
+            className="flex items-center space-x-4"
             onClick={closeMobileMenu}
           >
-            <div className="flex space-x-1">
-              <div className="w-2 h-3 sm:w-3 sm:h-4 bg-primary-600 rounded-sm"></div>
-              <div className="w-2 h-3 sm:w-3 sm:h-4 bg-primary-500 rounded-sm"></div>
-              <div className="w-2 h-3 sm:w-3 sm:h-4 bg-primary-400 rounded-sm"></div>
-            </div>
-            <div className="hidden sm:block">
-              <p className="text-xs text-gray-500 -mt-1">Professional Testing Services</p>
+            <img 
+              src="/logo.svg" 
+              alt="Asphaltic Science Logo" 
+              className="h-10 sm:h-12 lg:h-16 w-auto ml-2"
+            />
+            <div className="flex flex-col">
+              <span className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 leading-tight">Asphaltic</span>
+              <span className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 leading-tight">Science</span>
             </div>
           </Link>
 
