@@ -4,7 +4,6 @@ import Layout from './components/Layout';
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
-import ComingSoon from './pages/ComingSoon';
 import Contact from './pages/Contact';
 
 function App() {
@@ -49,19 +48,6 @@ function App() {
                   transition={{ duration: 0.3 }}
                 >
                   <Services />
-                </motion.div>
-              } 
-            />
-            <Route 
-              path="/glassware-supply" 
-              element={
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -20 }}
-                  transition={{ duration: 0.3 }}
-                >
-                  <ComingSoon />
                 </motion.div>
               } 
             />

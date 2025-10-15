@@ -11,7 +11,6 @@ const Navbar = ({ isScrolled }) => {
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
     { name: 'Services', path: '/services' },
-    { name: 'Glassware Supply', path: '/glassware-supply' },
     { name: 'Contact', path: '/contact' },
   ];
 

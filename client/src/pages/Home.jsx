@@ -1,8 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { 
-  FaFlask, 
-  FaHammer, 
   FaChartLine, 
   FaShieldAlt, 
   FaAward, 
@@ -18,27 +16,27 @@ import TestimonialCard from '../components/TestimonialCard';
 const Home = () => {
   const services = [
     {
-      icon: FaFlask,
+      icon: FaChartLine,
       title: 'Product Recommendations',
       description: 'Expert guidance on asphalt product selection based on project requirements and Australian standards.'
     },
     {
-      icon: FaHammer,
+      icon: FaShieldAlt,
       title: 'Supplier Network',
       description: 'Access to trusted supplier relationships and quality products from leading manufacturers.'
     },
     {
-      icon: FaChartLine,
+      icon: FaUsers,
       title: 'Market Analysis',
       description: 'Comprehensive market analysis and cost optimization guidance for asphalt procurement decisions.'
     },
     {
-      icon: FaShieldAlt,
+      icon: FaAward,
       title: 'Quality Standards',
       description: 'Deep knowledge of Australian quality standards and compliance requirements for product selection.'
     },
     {
-      icon: FaAward,
+      icon: FaCheckCircle,
       title: 'Technical Support',
       description: 'Ongoing technical support and guidance for product application and project success.'
     },
@@ -143,9 +141,9 @@ const Home = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="flex justify-center lg:justify-end order-1 lg:order-2"
             >
-              <Link to="/contact" className="btn-primary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-full flex items-center space-x-2">
-                <span>Request Consultation</span>
-                <FaArrowRight />
+              <Link to="/contact" className="btn-primary-mobile lg:btn-primary text-base sm:text-lg flex items-center space-x-3 group">
+                <span className="relative z-10">Request Consultation</span>
+                <FaArrowRight className="relative z-10 group-hover:translate-x-1 transition-transform duration-300" />
               </Link>
             </motion.div>
           </div>
@@ -156,59 +154,20 @@ const Home = () => {
       {/* About Preview Section */}
       <AnimatedSection className="section-padding bg-white">
         <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-            {/* Left Content */}
-            <div className="order-2 lg:order-1">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-dark-900 mb-4 lg:mb-6">
-                About Asphaltic Science
-              </h2>
-              <div className="space-y-3 lg:space-y-4 text-gray-700 leading-relaxed text-sm sm:text-base">
-                <p>
-                  Asphaltic Science operates as a reference company, providing expert guidance 
-                  and recommendations to help clients make informed decisions about asphalt 
-                  products and materials for their infrastructure projects.
-                </p>
-                <p>
-                  Our clients visit our office to discuss their project requirements and receive 
-                  professional recommendations on what products to purchase. We provide detailed 
-                  guidance on material specifications, quality standards, and supplier recommendations 
-                  to ensure project success.
-                </p>
-                <p>
-                  With deep expertise in Australian standards and market knowledge, we help 
-                  clients navigate the complex world of asphalt materials and make the right 
-                  purchasing decisions for safer roads and infrastructure.
-                </p>
-              </div>
-            </div>
-
-            {/* Right Content - Illustrations */}
-            <div className="relative order-1 lg:order-2">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-8">
-                {/* Left Worker */}
-                <div className="space-y-4">
-                  <div className="w-full h-48 sm:h-56 lg:h-64 bg-gradient-to-br from-primary-100 to-primary-200 rounded-lg flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-3 lg:mb-4">
-                        <FaHammer className="text-white text-lg sm:text-xl lg:text-2xl" />
-                      </div>
-                      <p className="text-xs sm:text-sm text-primary-800 font-medium">Field Testing</p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Right Worker */}
-                <div className="space-y-4 sm:mt-8">
-                  <div className="w-full h-48 sm:h-56 lg:h-64 bg-gradient-to-br from-secondary-100 to-secondary-200 rounded-lg flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-secondary-600 rounded-full flex items-center justify-center mx-auto mb-3 lg:mb-4">
-                        <FaFlask className="text-white text-lg sm:text-xl lg:text-2xl" />
-                      </div>
-                      <p className="text-xs sm:text-sm text-secondary-800 font-medium">Lab Analysis</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-dark-900 mb-6 lg:mb-8 text-center">
+              About Asphaltic Science
+            </h2>
+            <div className="space-y-4 lg:space-y-6 text-gray-700 leading-relaxed text-base sm:text-lg">
+              <p>
+                Asphaltic Science is a trusted Australian contractor specialising in the provision of expert laboratory and field technicians for asphalt testing and quality assurance. We play a vital role in supporting the country's road and infrastructure development through precise, reliable, and standards-compliant testing solutions.
+              </p>
+              <p>
+                Our team of highly trained professionals delivers a complete range of laboratory and on-site testing services, ensuring that every mix design, sample, and material meets stringent Australian Standards and project specifications. From density and air-void analysis to bitumen content, compaction, and performance testing, we ensure the quality, safety, and durability of asphalt works from start to finish.
+              </p>
+              <p>
+                At Asphaltic Science, we combine technical expertise, state-of-the-art equipment, and industry insight to help our clients achieve superior construction outcomes. Whether for major infrastructure projects or local road upgrades, our commitment remains the same — delivering accurate results, dependable service, and unmatched professional support in every project we undertake.
+              </p>
             </div>
           </div>
         </div>
