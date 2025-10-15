@@ -105,8 +105,8 @@ const Footer = () => {
                 <FaMapMarkerAlt className="text-primary-500 mt-1 flex-shrink-0" />
                 <div>
                   <p className="text-gray-300">
-                    123 Construction Way<br />
-                    Sydney, NSW 2000<br />
+                    24 Stradbroke Cr<br />
+                    Springfield Lakes QLD 4300<br />
                     Australia
                   </p>
                 </div>

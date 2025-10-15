@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import { 
   FaAward, 
-  FaUsers, 
   FaShieldAlt, 
   FaChartLine, 
   FaCheckCircle,
@@ -20,7 +19,7 @@ const About = () => {
       description: 'We maintain the highest standards in our recommendations, ensuring clients receive guidance on the best quality products for their projects.'
     },
     {
-      icon: FaUsers,
+      icon: FaAward,
       title: 'Expert Team',
       description: 'Our experienced professionals bring decades of industry knowledge and market expertise to help clients make informed purchasing decisions.'
     },
@@ -43,7 +42,6 @@ const About = () => {
 
   const marketExpertise = [
     { name: 'Product Specifications', description: 'Deep knowledge of asphalt product specifications and standards' },
-    { name: 'Supplier Networks', description: 'Established relationships with leading asphalt suppliers' },
     { name: 'Quality Standards', description: 'Expertise in Australian quality standards and compliance requirements' },
     { name: 'Market Trends', description: 'Up-to-date knowledge of industry trends and new products' },
     { name: 'Cost Optimization', description: 'Guidance on cost-effective product selection and procurement' },
@@ -64,10 +62,10 @@ const About = () => {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-4xl md:text-5xl font-bold mb-4 text-shadow">
-              About Aussie Asphalt Testing
+              About Asphaltic Science
             </h1>
             <p className="text-xl max-w-3xl mx-auto text-shadow">
-              Leading Australia's construction industry with professional testing services 
+              Leading Australia's asphalt testing industry with professional testing services 
               and quality assurance solutions.
             </p>
           </motion.div>
@@ -124,7 +122,7 @@ const About = () => {
                 className="card p-6"
               >
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-primary-600 rounded-lg flex items-center justify-center flex-shrink-0">
                     <value.icon className="text-white text-xl" />
                   </div>
                   <div>
@@ -165,7 +163,7 @@ const About = () => {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="card p-6 text-center hover:shadow-lg transition-shadow duration-300"
               >
-                <div className="w-16 h-16 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <FaCertificate className="text-white text-2xl" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-800 mb-2">
@@ -183,30 +181,13 @@ const About = () => {
       {/* Team & Expertise */}
       <AnimatedSection className="section-padding bg-gray-50">
         <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-                Our Team & Expertise
-              </h2>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                The foundation of our service is an expert team where our key professionals each possess over 10 years of hands-on experience in asphalt technology and materials analysis. This specialized knowledge, grounded in a deep understanding of Australian Standards, ensures we deliver exceptionally accurate and reliable results, providing you with the critical insights needed for project success.
-              </p>
-            </div>
-            <div className="relative">
-              <div className="bg-white rounded-2xl p-8 shadow-lg">
-                <div className="text-center">
-                  <div className="w-24 h-24 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <FaUsers className="text-white text-3xl" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-gray-800 mb-4">Expert Team</h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    Our multidisciplinary team combines technical expertise with practical 
-                    industry experience to deliver comprehensive testing solutions tailored 
-                    to your specific project requirements.
-                  </p>
-                </div>
-              </div>
-            </div>
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+              Our Team & Expertise
+            </h2>
+            <p className="text-lg text-gray-600 leading-relaxed">
+              The foundation of our service is an expert team where our key professionals each possess over 10 years of hands-on experience in asphalt technology and materials analysis. This specialized knowledge, grounded in a deep understanding of Australian Standards, ensures we deliver exceptionally accurate and reliable results, providing you with the critical insights needed for project success.
+            </p>
           </div>
         </div>
       </AnimatedSection>
