@@ -7,7 +7,10 @@ import {
   FaClock,
   FaUsers,
   FaCheckCircle,
-  FaArrowRight
+  FaArrowRight,
+  FaFlask,
+  FaHammer,
+  FaCog
 } from 'react-icons/fa';
 import AnimatedSection from '../components/AnimatedSection';
 import ServiceCard from '../components/ServiceCard';
@@ -16,34 +19,29 @@ import TestimonialCard from '../components/TestimonialCard';
 const Home = () => {
   const services = [
     {
+      icon: FaFlask,
+      title: 'Asphalt Laboratory Testing (AS & Q Methods)',
+      description: 'Comprehensive laboratory testing services in accordance with Australian Standards and Queensland methods for mix design validation and performance testing.'
+    },
+    {
+      icon: FaHammer,
+      title: 'Core Sampling and Site Testing',
+      description: 'Expert field technicians specialise in core sampling and on-site asphalt testing using precision equipment to assess pavement quality.'
+    },
+    {
       icon: FaChartLine,
-      title: 'Product Recommendations',
-      description: 'Expert guidance on asphalt product selection based on project requirements and Australian standards.'
+      title: 'Data Analysis & Advanced Testing Expertise',
+      description: 'Strong analytical capabilities and deep understanding of latest test methods to provide clear, actionable insights for quality control.'
     },
     {
-      icon: FaShieldAlt,
-      title: 'Supplier Network',
-      description: 'Access to trusted supplier relationships and quality products from leading manufacturers.'
+      icon: FaCog,
+      title: 'Expert Solutions & Asphalt Specification Support',
+      description: 'Specialised consulting and technical solutions to help meet complex asphalt specifications and troubleshoot performance issues.'
     },
     {
-      icon: FaUsers,
-      title: 'Market Analysis',
-      description: 'Comprehensive market analysis and cost optimization guidance for asphalt procurement decisions.'
-    },
-    {
-      icon: FaAward,
-      title: 'Quality Standards',
-      description: 'Deep knowledge of Australian quality standards and compliance requirements for product selection.'
-    },
-    {
-      icon: FaCheckCircle,
-      title: 'Technical Support',
-      description: 'Ongoing technical support and guidance for product application and project success.'
-    },
-    {
-      icon: FaClock,
-      title: 'Consultation Services',
-      description: 'Professional consultation services to help clients make informed purchasing decisions.'
+      icon: FaFlask,
+      title: 'Own Glassware',
+      description: 'Coming soon...'
     }
   ];
 
@@ -160,13 +158,16 @@ const Home = () => {
             </h2>
             <div className="space-y-4 lg:space-y-6 text-gray-700 leading-relaxed text-base sm:text-lg">
               <p>
+                This version connects the experience directly to the company's core combination of expertise and equipment.
+              </p>
+              <p>
                 Asphaltic Science is a trusted Australian contractor specialising in the provision of expert laboratory and field technicians for asphalt testing and quality assurance. We play a vital role in supporting the country's road and infrastructure development through precise, reliable, and standards-compliant testing solutions.
               </p>
               <p>
                 Our team of highly trained professionals delivers a complete range of laboratory and on-site testing services, ensuring that every mix design, sample, and material meets stringent Australian Standards and project specifications. From density and air-void analysis to bitumen content, compaction, and performance testing, we ensure the quality, safety, and durability of asphalt works from start to finish.
               </p>
               <p>
-                At Asphaltic Science, we combine technical expertise, state-of-the-art equipment, and industry insight to help our clients achieve superior construction outcomes. Whether for major infrastructure projects or local road upgrades, our commitment remains the same — delivering accurate results, dependable service, and unmatched professional support in every project we undertake.
+                At Asphaltic Science, we combine technical expertise—honed over a decade of working strictly to Australian Standards—with state-of-the-art equipment and industry insight to help our clients achieve superior construction outcomes. Whether for major infrastructure projects or local road upgrades, our commitment remains the same — delivering accurate results, dependable service, and unmatched professional support in every project we undertake.
               </p>
             </div>
           </div>

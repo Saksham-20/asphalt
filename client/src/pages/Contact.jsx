@@ -54,12 +54,11 @@ const Contact = () => {
   ];
 
   const services = [
-    'Core Testing & Analysis',
-    'Field Density Testing',
-    'Material Quality Assessment',
-    'Compliance Verification',
-    'Technical Reporting',
-    'Site Inspection Services'
+    'Asphalt Laboratory Testing (AS & Q Methods)',
+    'Core Sampling and Site Testing',
+    'Data Analysis & Advanced Testing Expertise',
+    'Expert Solutions & Asphalt Specification Support',
+    'Own Glassware'
   ];
 
   return (

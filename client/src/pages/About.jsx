@@ -82,16 +82,8 @@ const About = () => {
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
                 Our Mission
               </h2>
-              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                To provide expert guidance and recommendations that help clients make informed 
-                decisions about asphalt products and materials for their infrastructure projects. 
-                We operate as a reference company where clients visit our office to discuss 
-                their project requirements and receive professional recommendations on what to purchase.
-              </p>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Our mission drives us to continuously expand our market knowledge, maintain 
-                strong supplier relationships, and provide the highest levels of professional 
-                guidance while fostering collaborative partnerships with our clients.
+                Our mission is to be the trusted technical partner behind every superior construction outcome. We provide expert guidance and precise, standards-compliant asphalt testing that allows our clients to make informed decisions with confidence. We are dedicated to ensuring the quality, safety, and durability of Australia's vital infrastructure projects from start to finish.
               </p>
             </div>
             <div className="relative">
@@ -196,30 +188,9 @@ const About = () => {
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
                 Our Team & Expertise
               </h2>
-              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Our team consists of highly qualified professionals with extensive experience 
-                in asphalt testing, quality assurance, and construction materials analysis. 
-                Each team member brings specialized knowledge and technical expertise to ensure 
-                accurate and reliable testing results.
+              <p className="text-lg text-gray-600 leading-relaxed">
+                The foundation of our service is an expert team where our key professionals each possess over 10 years of hands-on experience in asphalt technology and materials analysis. This specialized knowledge, grounded in a deep understanding of Australian Standards, ensures we deliver exceptionally accurate and reliable results, providing you with the critical insights needed for project success.
               </p>
-              <div className="space-y-4">
-                <div className="flex items-center space-x-3">
-                  <FaCheckCircle className="text-primary-500 text-xl" />
-                  <span className="text-gray-700">Certified Materials Engineers</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <FaCheckCircle className="text-primary-500 text-xl" />
-                  <span className="text-gray-700">NATA Accredited Technicians</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <FaCheckCircle className="text-primary-500 text-xl" />
-                  <span className="text-gray-700">15+ Years Industry Experience</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <FaCheckCircle className="text-primary-500 text-xl" />
-                  <span className="text-gray-700">Continuous Professional Development</span>
-                </div>
-              </div>
             </div>
             <div className="relative">
               <div className="bg-white rounded-2xl p-8 shadow-lg">

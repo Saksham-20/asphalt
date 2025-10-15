@@ -18,81 +18,57 @@ import ServiceCard from '../components/ServiceCard';
 const Services = () => {
   const services = [
     {
-      icon: FaFlask,
-      title: 'Product Recommendations',
-      description: 'Expert guidance on asphalt product selection based on project requirements, environmental conditions, and Australian standards. We help clients choose the right products for optimal performance.',
-      features: ['Product Selection', 'Performance Analysis', 'Environmental Considerations', 'Standards Compliance']
+      image: 'https://via.placeholder.com/64x64/4F46E5/FFFFFF?text=Lab',
+      title: 'Asphalt Laboratory Testing (AS & Q Methods)',
+      description: 'We provide comprehensive asphalt laboratory testing services in accordance with Australian Standards (AS) and Queensland Department of Transport and Main Roads (Q) methods. Our fully equipped facilities and skilled technicians ensure accurate results for mix design validation, density, air voids, bitumen content, and performance testing — guaranteeing quality and compliance for every project.',
+      features: ['Mix Design Validation', 'Density & Air Voids Testing', 'Bitumen Content Analysis', 'Performance Testing']
     },
     {
-      icon: FaHammer,
-      title: 'Supplier Network',
-      description: 'Access to our established network of trusted suppliers and manufacturers across Australia. We connect clients with quality products and competitive pricing.',
-      features: ['Supplier Relationships', 'Quality Products', 'Competitive Pricing', 'Reliable Supply']
+      image: 'https://via.placeholder.com/64x64/4F46E5/FFFFFF?text=Core',
+      title: 'Core Sampling and Site Testing',
+      description: 'Our experienced field technicians specialise in core sampling and on-site asphalt testing, using precision equipment to assess in-situ pavement quality. From sampling and compaction testing to thickness verification, we ensure reliable data that reflects real site conditions and supports confident decision-making for project stakeholders.',
+      features: ['Core Sampling', 'On-Site Testing', 'Compaction Testing', 'Thickness Verification']
     },
     {
-      icon: FaChartLine,
-      title: 'Market Analysis',
-      description: 'Comprehensive market analysis and cost optimization guidance for asphalt procurement decisions. We help clients understand market trends and make cost-effective choices.',
-      features: ['Market Trends', 'Cost Analysis', 'Price Optimization', 'Market Intelligence']
+      image: 'https://via.placeholder.com/64x64/4F46E5/FFFFFF?text=Data',
+      title: 'Data Analysis & Advanced Testing Expertise',
+      description: 'At Asphaltic Science, we take pride in our strong analytical capabilities and deep understanding of the latest test methods and specifications. Our team interprets complex test data to provide clear, actionable insights, helping clients optimise mix designs, improve quality control, and ensure conformance with the latest industry standards.',
+      features: ['Advanced Test Methods', 'Data Interpretation', 'Mix Design Optimization', 'Quality Control Support']
     },
     {
-      icon: FaShieldAlt,
-      title: 'Quality Standards',
-      description: 'Deep knowledge of Australian quality standards and compliance requirements for product selection. We ensure all recommendations meet regulatory standards.',
-      features: ['Standards Knowledge', 'Compliance Guidance', 'Quality Assurance', 'Regulatory Updates']
+      image: 'https://via.placeholder.com/64x64/4F46E5/FFFFFF?text=Expert',
+      title: 'Expert Solutions & Asphalt Specification Support',
+      description: 'We offer specialised consulting and technical solutions to help clients meet complex asphalt specifications — from troubleshooting performance issues to commissioning new asphalt plants. With hands-on industry experience and a solutions-driven approach, our experts ensure your operations deliver consistent, compliant, and high-performing asphalt outcomes.',
+      features: ['Specification Consulting', 'Performance Troubleshooting', 'Plant Commissioning', 'Technical Solutions']
     },
     {
-      icon: FaAward,
-      title: 'Technical Support',
-      description: 'Ongoing technical support and guidance for product application and project success. We provide expert advice throughout the project lifecycle.',
-      features: ['Technical Guidance', 'Application Support', 'Project Consultation', 'Ongoing Assistance']
-    },
-    {
-      icon: FaClock,
-      title: 'Consultation Services',
-      description: 'Professional consultation services to help clients make informed purchasing decisions. We provide personalized advice based on specific project needs.',
-      features: ['Personalized Advice', 'Project Assessment', 'Decision Support', 'Expert Consultation']
-    },
-    {
-      icon: FaCog,
-      title: 'Procurement Planning',
-      description: 'Strategic procurement planning and project management support. We help clients plan their material purchases efficiently and cost-effectively.',
-      features: ['Strategic Planning', 'Project Management', 'Efficiency Optimization', 'Cost Management']
-    },
-    {
-      icon: FaSearch,
-      title: 'Product Research',
-      description: 'Comprehensive product research and evaluation services. We help clients understand product specifications and performance characteristics.',
-      features: ['Product Evaluation', 'Specification Analysis', 'Performance Research', 'Technical Documentation']
-    },
-    {
-      icon: FaFileAlt,
-      title: 'Documentation Support',
-      description: 'Complete documentation support for procurement decisions and compliance requirements. We provide detailed reports and recommendations.',
-      features: ['Documentation', 'Compliance Reports', 'Recommendation Reports', 'Technical Documentation']
+      image: 'https://via.placeholder.com/64x64/4F46E5/FFFFFF?text=Glass',
+      title: 'Own Glassware',
+      description: 'Coming soon...',
+      features: []
     }
   ];
 
   const processSteps = [
     {
       step: '01',
-      title: 'Initial Consultation',
-      description: 'We discuss your project requirements, budget, and specific material needs to understand your procurement goals.'
+      title: 'Project Briefing',
+      description: 'We discuss your testing requirements, project specifications, and quality standards to understand your testing goals and objectives.'
     },
     {
       step: '02',
-      title: 'Project Assessment',
-      description: 'Our team conducts a thorough assessment of your project to identify the best products and suppliers for your needs.'
+      title: 'Sample Collection',
+      description: 'Our field technicians collect samples using precision equipment, or we receive laboratory samples for comprehensive testing analysis.'
     },
     {
       step: '03',
-      title: 'Recommendation Development',
-      description: 'We develop comprehensive product recommendations based on Australian standards, performance requirements, and cost optimization.'
+      title: 'Laboratory Analysis',
+      description: 'We conduct comprehensive testing per Australian Standards, ensuring accurate results for mix design, density, and performance analysis.'
     },
     {
       step: '04',
-      title: 'Supplier Connection',
-      description: 'We connect you with trusted suppliers and provide ongoing support throughout the procurement and project lifecycle.'
+      title: 'Results & Reporting',
+      description: 'We provide detailed reports with analysis, recommendations, and compliance documentation to support your project decisions.'
     }
   ];
 
@@ -143,8 +119,19 @@ const Services = () => {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="card p-6 group hover:shadow-lg transition-all duration-300"
               >
-                <div className="w-16 h-16 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <service.icon className="text-white text-2xl" />
+                <div className="w-16 h-16 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 overflow-hidden">
+                  <img 
+                    src={service.image} 
+                    alt={service.title}
+                    className="w-full h-full object-cover rounded-xl"
+                    onError={(e) => {
+                      e.target.style.display = 'none';
+                      e.target.nextSibling.style.display = 'flex';
+                    }}
+                  />
+                  <div className="w-full h-full bg-gradient-to-r from-primary-500 to-secondary-500 rounded-xl flex items-center justify-center" style={{display: 'none'}}>
+                    <FaFlask className="text-white text-2xl" />
+                  </div>
                 </div>
                 
                 <h3 className="text-xl font-semibold text-gray-800 mb-3 group-hover:text-primary-600 transition-colors">
@@ -155,14 +142,16 @@ const Services = () => {
                   {service.description}
                 </p>
                 
-                <ul className="space-y-2">
-                  {service.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-center space-x-2 text-sm text-gray-600">
-                      <FaCheckCircle className="text-primary-500 text-xs" />
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
+                {service.features.length > 0 && (
+                  <ul className="space-y-2">
+                    {service.features.map((feature, featureIndex) => (
+                      <li key={featureIndex} className="flex items-center space-x-2 text-sm text-gray-600">
+                        <FaCheckCircle className="text-primary-500 text-xs" />
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </motion.div>
             ))}
           </div>
@@ -215,57 +204,14 @@ const Services = () => {
       {/* Standards & Compliance */}
       <AnimatedSection className="section-padding">
         <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
                 Australian Standards Compliance
               </h2>
-              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                All our testing procedures are conducted in strict accordance with Australian 
-                standards and industry best practices. We maintain full compliance with 
-                relevant regulations and provide comprehensive documentation for all testing activities.
+              <p className="text-lg text-gray-600 leading-relaxed">
+                Our unwavering commitment to Australian Standards is your guarantee of quality and precision. Every test is meticulously performed to meet the highest industry benchmarks and regulatory requirements, ensuring the integrity of your project. This rigorous adherence provides you with fully documented, traceable, and certified results you can trust. By choosing us, you are choosing the peace of mind that comes from verifiable compliance and the assurance that your materials and processes are safe and reliable.
               </p>
-              <div className="space-y-4">
-                <div className="flex items-center space-x-3">
-                  <FaCheckCircle className="text-primary-500 text-xl" />
-                  <span className="text-gray-700">AS 1141 Series - Aggregates Testing</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <FaCheckCircle className="text-primary-500 text-xl" />
-                  <span className="text-gray-700">AS 2891 Series - Asphalt Testing</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <FaCheckCircle className="text-primary-500 text-xl" />
-                  <span className="text-gray-700">NATA Accredited Procedures</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <FaCheckCircle className="text-primary-500 text-xl" />
-                  <span className="text-gray-700">Quality Management Systems</span>
-                </div>
-              </div>
-            </div>
-            <div className="relative">
-              <div className="bg-gradient-to-r from-primary-500 to-secondary-500 rounded-2xl p-8 text-white">
-                <h3 className="text-2xl font-bold mb-4">Quality Assurance</h3>
-                <p className="text-lg leading-relaxed mb-6">
-                  Our commitment to quality is demonstrated through our comprehensive 
-                  quality management system and continuous improvement processes.
-                </p>
-                <div className="space-y-3">
-                  <div className="flex items-center space-x-3">
-                    <FaAward className="text-white text-xl" />
-                    <span>NATA Accredited Laboratory</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <FaShieldAlt className="text-white text-xl" />
-                    <span>ISO 9001 Quality Management</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <FaFileAlt className="text-white text-xl" />
-                    <span>Comprehensive Documentation</span>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
