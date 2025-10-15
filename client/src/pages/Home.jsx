@@ -2,7 +2,6 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { 
   FaChartLine, 
-  FaShieldAlt, 
   FaAward, 
   FaClock,
   FaUsers,
@@ -14,7 +13,6 @@ import {
 } from 'react-icons/fa';
 import AnimatedSection from '../components/AnimatedSection';
 import ServiceCard from '../components/ServiceCard';
-import TestimonialCard from '../components/TestimonialCard';
 
 const Home = () => {
   const services = [
@@ -37,11 +35,6 @@ const Home = () => {
       icon: FaCog,
       title: 'Expert Solutions & Asphalt Specification Support',
       description: 'Specialised consulting and technical solutions to help meet complex asphalt specifications and troubleshoot performance issues.'
-    },
-    {
-      icon: FaFlask,
-      title: 'Own Glassware',
-      description: 'Coming soon...'
     }
   ];
 
@@ -65,34 +58,9 @@ const Home = () => {
       icon: FaClock,
       title: 'Fast Response',
       description: 'Quick response times and efficient consultation processes for your project timeline.'
-    },
-    {
-      icon: FaShieldAlt,
-      title: 'Supplier Network',
-      description: 'Established relationships with trusted suppliers and manufacturers across Australia.'
     }
   ];
 
-  const testimonials = [
-    {
-      name: 'Sarah Mitchell',
-      company: 'Metro Construction Group',
-      text: 'Aussie Asphalt Testing has been our go-to partner for over 5 years. Their expertise and reliability have been instrumental in our project success.',
-      rating: 5
-    },
-    {
-      name: 'David Chen',
-      company: 'Highway Infrastructure Ltd',
-      text: 'Professional service with accurate results. Their team understands the complexities of large-scale infrastructure projects.',
-      rating: 5
-    },
-    {
-      name: 'Lisa Thompson',
-      company: 'Urban Development Corp',
-      text: 'Outstanding quality assurance services. They helped us maintain the highest standards across all our residential developments.',
-      rating: 5
-    }
-  ];
 
   return (
     <div className="pt-16 lg:pt-20">
@@ -230,12 +198,11 @@ const Home = () => {
               Why Choose Us
             </h2>
             <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto px-4">
-              We combine technical expertise, industry experience, and commitment to quality 
-              to deliver exceptional testing services.
+              We combine technical expertise, extensive industry experience, and an unwavering commitment to quality to deliver exceptional testing services. Understanding the critical nature of your projects, we are available 24/7 and proudly offer flexible fly-in/fly-out services to ensure our support is always where and when you need it most.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
             {features.map((feature, index) => (
               <motion.div
                 key={index}
@@ -257,36 +224,33 @@ const Home = () => {
               </motion.div>
             ))}
           </div>
-        </div>
-      </AnimatedSection>
 
-      {/* Testimonials Section */}
-      <AnimatedSection className="section-padding bg-gray-50">
-        <div className="container-custom">
-          <div className="text-center mb-12 lg:mb-16">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-3 lg:mb-4">
-              What Our Clients Say
-            </h2>
-            <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto px-4">
-              Trusted by leading construction companies across Australia for reliable 
-              and professional testing services.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-            {testimonials.map((testimonial, index) => (
-              <TestimonialCard
-                key={index}
-                name={testimonial.name}
-                company={testimonial.company}
-                text={testimonial.text}
-                rating={testimonial.rating}
-                delay={index * 0.1}
-              />
-            ))}
+          {/* Coming Soon Feature - Separate and Distinct */}
+          <div className="mt-16 lg:mt-20 flex justify-center">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.5 }}
+              className="relative bg-white rounded-2xl p-8 lg:p-12 shadow-xl border-2 border-primary-100 max-w-md mx-auto"
+            >
+              <div className="absolute -top-3 -right-3 bg-gradient-to-r from-primary-500 to-secondary-500 text-white text-sm font-bold px-4 py-2 rounded-full shadow-lg">
+                NEW
+              </div>
+              <div className="w-20 h-20 lg:w-24 lg:h-24 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <FaFlask className="text-white text-3xl lg:text-4xl" />
+              </div>
+              <h3 className="text-xl lg:text-2xl font-bold text-dark-900 mb-4 text-center">
+                Own Set of Lab Glassware
+              </h3>
+              <p className="text-primary-600 font-medium italic text-center text-lg">
+                Coming soon...
+              </p>
+            </motion.div>
           </div>
         </div>
       </AnimatedSection>
+
 
       {/* CTA Section */}
       <AnimatedSection className="section-padding bg-primary-600">

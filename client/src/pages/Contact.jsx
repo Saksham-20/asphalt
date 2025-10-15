@@ -18,8 +18,8 @@ const Contact = () => {
       icon: FaMapMarkerAlt,
       title: 'Office Address',
       details: [
-        '123 Construction Way',
-        'Sydney, NSW 2000',
+        '24 Stradbroke Cr',
+        'Springfield Lakes QLD 4300',
         'Australia'
       ]
     },
@@ -57,8 +57,7 @@ const Contact = () => {
     'Asphalt Laboratory Testing (AS & Q Methods)',
     'Core Sampling and Site Testing',
     'Data Analysis & Advanced Testing Expertise',
-    'Expert Solutions & Asphalt Specification Support',
-    'Own Glassware'
+    'Expert Solutions & Asphalt Specification Support'
   ];
 
   return (
@@ -117,7 +116,7 @@ const Contact = () => {
                     transition={{ duration: 0.6, delay: index * 0.1 }}
                     className="flex items-start space-x-4"
                   >
-                    <div className="w-12 h-12 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 bg-primary-600 rounded-lg flex items-center justify-center flex-shrink-0">
                       <info.icon className="text-white text-xl" />
                     </div>
                     <div>
@@ -201,48 +200,23 @@ const Contact = () => {
         </div>
       </AnimatedSection>
 
-      {/* Map Section */}
-      <AnimatedSection className="section-padding">
-        <div className="container-custom">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-              Find Us
-            </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Visit our office in Sydney or contact us for on-site testing services 
-              throughout Australia.
-            </p>
-          </div>
 
-          <div className="bg-gray-200 rounded-2xl h-96 flex items-center justify-center">
-            <div className="text-center text-gray-600">
-              <FaMapMarkerAlt className="text-4xl mb-4 mx-auto" />
-              <h3 className="text-xl font-semibold mb-2">Interactive Map</h3>
-              <p className="mb-4">123 Construction Way, Sydney, NSW 2000</p>
-              <p className="text-sm">
-                Google Maps integration can be added here
-              </p>
-            </div>
-          </div>
-        </div>
-      </AnimatedSection>
-
-      {/* Emergency Contact */}
+      {/* CTA Section */}
       <AnimatedSection className="section-padding bg-gradient-to-r from-primary-500 to-secondary-500">
         <div className="container-custom text-center text-white">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Emergency Testing Services
+            Ready to Discuss Your Testing Requirements?
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
-            Need urgent testing services? Our emergency response team is available 
-            24/7 for critical project requirements.
+            Contact our expert team for a customized testing plan that meets your 
+            project specifications and budget requirements.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:+61400123456" className="btn-outline">
-              Emergency Hotline: 0400 123 456
+            <a href="/contact" className="btn-outline">
+              Get Free Quote
             </a>
-            <a href="mailto:emergency@aussieasphalttesting.com.au" className="btn-secondary">
-              Emergency Email
+            <a href="tel:+61212345678" className="btn-secondary">
+              Call (02) 1234 5678
             </a>
           </div>
         </div>

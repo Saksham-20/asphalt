@@ -18,34 +18,28 @@ import ServiceCard from '../components/ServiceCard';
 const Services = () => {
   const services = [
     {
-      image: 'https://via.placeholder.com/64x64/4F46E5/FFFFFF?text=Lab',
+      icon: FaFlask,
       title: 'Asphalt Laboratory Testing (AS & Q Methods)',
       description: 'We provide comprehensive asphalt laboratory testing services in accordance with Australian Standards (AS) and Queensland Department of Transport and Main Roads (Q) methods. Our fully equipped facilities and skilled technicians ensure accurate results for mix design validation, density, air voids, bitumen content, and performance testing — guaranteeing quality and compliance for every project.',
       features: ['Mix Design Validation', 'Density & Air Voids Testing', 'Bitumen Content Analysis', 'Performance Testing']
     },
     {
-      image: 'https://via.placeholder.com/64x64/4F46E5/FFFFFF?text=Core',
+      icon: FaHammer,
       title: 'Core Sampling and Site Testing',
       description: 'Our experienced field technicians specialise in core sampling and on-site asphalt testing, using precision equipment to assess in-situ pavement quality. From sampling and compaction testing to thickness verification, we ensure reliable data that reflects real site conditions and supports confident decision-making for project stakeholders.',
       features: ['Core Sampling', 'On-Site Testing', 'Compaction Testing', 'Thickness Verification']
     },
     {
-      image: 'https://via.placeholder.com/64x64/4F46E5/FFFFFF?text=Data',
+      icon: FaChartLine,
       title: 'Data Analysis & Advanced Testing Expertise',
       description: 'At Asphaltic Science, we take pride in our strong analytical capabilities and deep understanding of the latest test methods and specifications. Our team interprets complex test data to provide clear, actionable insights, helping clients optimise mix designs, improve quality control, and ensure conformance with the latest industry standards.',
       features: ['Advanced Test Methods', 'Data Interpretation', 'Mix Design Optimization', 'Quality Control Support']
     },
     {
-      image: 'https://via.placeholder.com/64x64/4F46E5/FFFFFF?text=Expert',
+      icon: FaCog,
       title: 'Expert Solutions & Asphalt Specification Support',
       description: 'We offer specialised consulting and technical solutions to help clients meet complex asphalt specifications — from troubleshooting performance issues to commissioning new asphalt plants. With hands-on industry experience and a solutions-driven approach, our experts ensure your operations deliver consistent, compliant, and high-performing asphalt outcomes.',
       features: ['Specification Consulting', 'Performance Troubleshooting', 'Plant Commissioning', 'Technical Solutions']
-    },
-    {
-      image: 'https://via.placeholder.com/64x64/4F46E5/FFFFFF?text=Glass',
-      title: 'Own Glassware',
-      description: 'Coming soon...',
-      features: []
     }
   ];
 
@@ -119,19 +113,8 @@ const Services = () => {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="card p-6 group hover:shadow-lg transition-all duration-300"
               >
-                <div className="w-16 h-16 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 overflow-hidden">
-                  <img 
-                    src={service.image} 
-                    alt={service.title}
-                    className="w-full h-full object-cover rounded-xl"
-                    onError={(e) => {
-                      e.target.style.display = 'none';
-                      e.target.nextSibling.style.display = 'flex';
-                    }}
-                  />
-                  <div className="w-full h-full bg-gradient-to-r from-primary-500 to-secondary-500 rounded-xl flex items-center justify-center" style={{display: 'none'}}>
-                    <FaFlask className="text-white text-2xl" />
-                  </div>
+                <div className="w-16 h-16 bg-primary-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <service.icon className="text-white text-2xl" />
                 </div>
                 
                 <h3 className="text-xl font-semibold text-gray-800 mb-3 group-hover:text-primary-600 transition-colors">
@@ -182,7 +165,7 @@ const Services = () => {
                 className="text-center"
               >
                 <div className="relative mb-6">
-                  <div className="w-20 h-20 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-20 h-20 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-white text-2xl font-bold">{step.step}</span>
                   </div>
                   {index < processSteps.length - 1 && (

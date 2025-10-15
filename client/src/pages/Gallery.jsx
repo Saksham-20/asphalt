@@ -206,7 +206,7 @@ const Gallery = () => {
               transition={{ duration: 0.6 }}
               className="bg-white rounded-xl p-6 shadow-lg"
             >
-              <div className="w-16 h-16 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <FaSearch className="text-white text-2xl" />
               </div>
               <h3 className="text-2xl font-bold text-gray-800 mb-2">500+</h3>
@@ -220,7 +220,7 @@ const Gallery = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="bg-white rounded-xl p-6 shadow-lg"
             >
-              <div className="w-16 h-16 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white text-2xl font-bold">15+</span>
               </div>
               <h3 className="text-2xl font-bold text-gray-800 mb-2">Years</h3>
@@ -234,7 +234,7 @@ const Gallery = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="bg-white rounded-xl p-6 shadow-lg"
             >
-              <div className="w-16 h-16 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white text-2xl font-bold">100%</span>
               </div>
               <h3 className="text-2xl font-bold text-gray-800 mb-2">Compliance</h3>
@@ -248,7 +248,7 @@ const Gallery = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="bg-white rounded-xl p-6 shadow-lg"
             >
-              <div className="w-16 h-16 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white text-2xl font-bold">24/7</span>
               </div>
               <h3 className="text-2xl font-bold text-gray-800 mb-2">Support</h3>
