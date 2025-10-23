@@ -43,7 +43,7 @@ This message was sent from the Asphaltic Science website contact form.
     `.trim();
 
     // Create mailto link
-    const mailtoLink = `mailto:info@asphalticscience.com.au?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailtoLink = `mailto:admin@asphalticscience.com.au?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     
     // Open email client
     window.location.href = mailtoLink;

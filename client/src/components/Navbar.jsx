@@ -128,7 +128,7 @@ const Navbar = ({ isScrolled }) => {
                   </div>
                   <div className="flex items-center space-x-2 text-sm text-gray-600 mb-4">
                     <FaEnvelope className="text-primary-600" />
-                    <span>info@asphalticscience.com.au</span>
+                    <span>admin@asphalticscience.com.au</span>
                   </div>
                   <Link
                     to="/contact"
