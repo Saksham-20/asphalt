@@ -125,9 +125,9 @@ const Home = () => {
               About Asphaltic Science
             </h2>
             <div className="space-y-4 lg:space-y-6 text-gray-700 leading-relaxed text-base sm:text-lg">
-              <p>
-                This version connects the experience directly to the company's core combination of expertise and equipment.
-              </p>
+            
+                
+              
               <p>
                 Asphaltic Science is a trusted Australian contractor specialising in the provision of expert laboratory and field technicians for asphalt testing and quality assurance. We play a vital role in supporting the country's road and infrastructure development through precise, reliable, and standards-compliant testing solutions.
               </p>
@@ -267,7 +267,7 @@ const Home = () => {
               Get Free Quote
             </Link>
             <a href="tel:+61212345678" className="btn-secondary text-sm sm:text-base">
-              Call (02) 1234 5678
+              Call +61 449 987 475
             </a>
           </div>
         </div>

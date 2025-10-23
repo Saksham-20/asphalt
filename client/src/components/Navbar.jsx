@@ -123,7 +123,7 @@ const Navbar = ({ isScrolled }) => {
                 <div className="pt-4 border-t border-gray-200">
                   <div className="flex items-center space-x-2 text-sm text-gray-600 mb-3">
                     <FaPhone className="text-primary-600" />
-                    <span>(02) 1234 5678</span>
+                    <span>+61 449 987 475</span>
                   </div>
                   <div className="flex items-center space-x-2 text-sm text-gray-600 mb-4">
                     <FaEnvelope className="text-primary-600" />

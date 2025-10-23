@@ -105,8 +105,8 @@ const Footer = () => {
                 <FaMapMarkerAlt className="text-primary-500 mt-1 flex-shrink-0" />
                 <div>
                   <p className="text-gray-300">
-                    24 Stradbroke Cr<br />
-                    Springfield Lakes QLD 4300<br />
+                    11/18-20 Cessna Dr,<br />
+                    Caboolture QLD 4510<br />
                     Australia
                   </p>
                 </div>
@@ -118,17 +118,17 @@ const Footer = () => {
                   href="tel:+61212345678" 
                   className="text-gray-300 hover:text-primary-400 transition-colors"
                 >
-                  (02) 1234 5678
+                  +61 449 987 475
                 </a>
               </div>
               
               <div className="flex items-center space-x-3">
                 <FaEnvelope className="text-primary-500 flex-shrink-0" />
                 <a 
-                  href="mailto:info@aussieasphalttesting.com.au" 
+                  href="mailto:admin@asphalticscience.com.au" 
                   className="text-gray-300 hover:text-primary-400 transition-colors"
                 >
-                  info@aussieasphalttesting.com.au
+                  admin@asphalticscience.com.au
                 </a>
               </div>
             </div>

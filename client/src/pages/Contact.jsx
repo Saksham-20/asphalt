@@ -18,8 +18,8 @@ const Contact = () => {
       icon: FaMapMarkerAlt,
       title: 'Office Address',
       details: [
-        '24 Stradbroke Cr',
-        'Springfield Lakes QLD 4300',
+        '11/18-20 Cessena Dr,',
+        'Caboolture QLD 4510',
         'Australia'
       ]
     },
@@ -27,18 +27,18 @@ const Contact = () => {
       icon: FaPhone,
       title: 'Phone Numbers',
       details: [
-        'Main: (02) 1234 5678',
-        'Mobile: 0400 123 456',
-        'Fax: (02) 1234 5679'
+        //'Main: +61 449 987 475',
+        'Mobile: +61 449 987 475',
+        //'Fax: (02) 1234 5679'
       ]
     },
     {
       icon: FaEnvelope,
       title: 'Email Addresses',
       details: [
-        'General: info@aussieasphalttesting.com.au',
-        'Sales: sales@aussieasphalttesting.com.au',
-        'Support: support@aussieasphalttesting.com.au'
+        'General: admin@asphalticscience.com.au',
+        //'Sales: sales@aussieasphalttesting.com.au',
+        //'Support: support@aussieasphalttesting.com.au'
       ]
     },
     {
@@ -216,7 +216,7 @@ const Contact = () => {
               Get Free Quote
             </a>
             <a href="tel:+61212345678" className="btn-secondary">
-              Call (02) 1234 5678
+              Call +61 449 987 475
             </a>
           </div>
         </div>
