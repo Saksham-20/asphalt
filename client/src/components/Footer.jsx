@@ -27,11 +27,11 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 bg-primary-600 rounded-lg flex items-center justify-center">
-                <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                </svg>
-              </div>
+              <img 
+                src="/logo.svg" 
+                alt="Asphaltic Science Logo" 
+                className="h-28 w-auto brightness-0 invert"
+              />
               <div>
                 <h3 className="text-xl font-bold">Asphaltic Science</h3>
                 <p className="text-sm text-gray-400">Professional Testing Services</p>
